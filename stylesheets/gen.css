@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.blue {
+  background-color: rgba(32,41,84,0);
+}
+
+.teal {
+  background-color: rgba(85,197,203,0);
+}
+
+.orange {
+  background-color: rgba(193,90,41,0);
+}
+
+.gray {
+  background-color: rgba(189,178,166,0);
+}
+
+.white {
+  background-color: rgba(243,235,231,0);
+}
