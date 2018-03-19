@@ -5,17 +5,17 @@
   grid-template-rows: auto auto auto auto 20px;
   grid-template-areas:
     "n n n n n . v v v v v v"
-    "m m m m m m m m m m m m"
+    "h h h h h h h h h h h h"
     "a a a a a a d d d d d d"
     "a a a a a a . c c c c ."
     "f f f f f f f f f f f f"
 }
 
-.main {
-  grid-area: m;
+.header {
+  grid-area: h;
 }
 
-.main > img {
+.header > img {
   width: 100%;
   min-width: 1200px;
 }
