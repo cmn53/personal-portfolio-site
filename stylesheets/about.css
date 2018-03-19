@@ -38,12 +38,6 @@
   margin: 20px 20px 0 20px;
 }
 
-.description p {
-  font-family: 'Muni', sans-serif;
-  line-height: 200%;
-  color: gray;
-}
-
 .contact {
   grid-area: c;
   display: flex;

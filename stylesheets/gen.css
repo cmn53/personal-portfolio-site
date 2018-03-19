@@ -31,6 +31,12 @@ h2 {
   color: darkgray;
 }
 
+p {
+  font-family: 'Muni', sans-serif;
+  line-height: 200%;
+  color: gray;
+}
+
 .name {
   grid-area: n;
   color: darkgray;

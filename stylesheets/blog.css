@@ -1,0 +1,52 @@
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto 20px;
+  grid-template-areas:
+    "n n n n n . v v v v v v"
+    "h h h h h h h h h h h h"
+    "m m m m m m m m m m m m"
+    "f f f f f f f f f f f f"
+}
+
+.header {
+  grid-area: h;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header > h1, .header > h2 {
+  margin: 0.5rem;
+}
+
+.main {
+  grid-area: m;
+  margin-top: 20px;
+}
+
+.main > ul {
+  display: grid;
+  margin: 20px;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.main li {
+  padding: 20px 0 20px 0;
+}
+
+.main li:nth-child(even) {
+  border-top: 15px solid rgba(116,183,140,1);
+}
+
+.main li:nth-child(odd) {
+  border-top: 15px solid rgba(15,145,98,1);
+}
+
+.main a {
+  color: rgba(234,151,21,1);
+}
