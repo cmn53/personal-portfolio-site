@@ -1,0 +1,41 @@
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto auto 20px;
+  grid-template-areas:
+    "n n n n n . v v v v v v"
+    "m m m m m m m m m m m m"
+    "w w w w w w w w w w w w"
+    ". c c c c c c c c c c ."
+    "f f f f f f f f f f f f"
+}
+
+.main {
+  grid-area: m;
+}
+
+.main > img {
+  width: 100%;
+  min-width: 1200px;
+}
+
+.welcome {
+  grid-area: w;
+  text-align: center;
+}
+
+.content {
+  grid-area: c;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.content a {
+  text-dc
+}
+
+.content a:hover {
+  background-color: background-color: rgba(234,151,21,.75);
+}

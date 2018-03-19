@@ -1,0 +1,52 @@
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto auto 20px;
+  grid-template-areas:
+    "n n n n n . v v v v v v"
+    "m m m m m m m m m m m m"
+    "a a a a a a d d d d d d"
+    "a a a a a a . c c c c ."
+    "f f f f f f f f f f f f"
+}
+
+.main {
+  grid-area: m;
+}
+
+.main > img {
+  width: 100%;
+  min-width: 1200px;
+}
+
+.about-me {
+  grid-area: a;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px;
+}
+
+.about-me > img {
+  border-radius: 50px;
+}
+
+.description {
+  grid-area: d;
+  margin: 20px 20px 0 20px;
+}
+
+.description p {
+  font-family: 'Muni', sans-serif;
+  line-height: 200%;
+  color: gray;
+}
+
+.contact {
+  grid-area: c;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}

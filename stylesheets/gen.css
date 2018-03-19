@@ -1,24 +1,94 @@
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
-.blue {
-  background-color: rgba(32,41,84,0);
+ul, li {
+  list-style-type: none;
+  padding: 0;
 }
 
-.teal {
-  background-color: rgba(85,197,203,0);
+a {
+  text-decoration: none;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 5rem;
+  font-weight: bolder;
+  text-shadow: 2px 2px gray;
+  color: rgba(116,183,140,0.8);
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+  font-family: 'Muli', sans-serif;
+  font-size: 1.5rem;
+  color: darkgray;
+}
+
+.name {
+  grid-area: n;
+  color: darkgray;
+  align-self: center;
+  font-family: 'Muli', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding-left: 20px;
+}
+
+.nav {
+  grid-area: v;
+  color: darkgray;
+}
+
+.nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.nav a {
+  color: darkgray;
+  font-family: 'Muli', sans-serif;
+  font-size: 1.25rem;
+}
+
+.footer {
+  grid-area: f;
+}
+
+.footer > div {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
 }
 
 .orange {
-  background-color: rgba(193,90,41,0);
+  flex: 1;
+  background-color: rgba(234,151,21,1);
 }
 
-.gray {
-  background-color: rgba(189,178,166,0);
+.brown {
+  flex: 1;
+  background-color: rgba(132,109,97,1);
 }
 
-.white {
-  background-color: rgba(243,235,231,0);
+.green {
+  flex: 1;
+  background-color: rgba(15,145,98,1);
+}
+
+.light-green {
+  flex: 1;
+  background-color: rgba(116,183,140,1);
+}
+
+.fa {
+  font-size: 1.75rem;
+  color: rgba(116,183,140,1);
 }
