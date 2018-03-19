@@ -7,7 +7,7 @@
     "n n n n n . v v v v v v"
     "h h h h h h h h h h h h"
     "w w w w w w w w w w w w"
-    ". c c c c c c c c c c ."
+    "c c c c c c c c c c c c"
     "f f f f f f f f f f f f"
 }
 
@@ -27,15 +27,40 @@
 
 .content {
   grid-area: c;
+  margin: 20px 0 20px 0;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .content a {
-  text-dc
+  padding: 20px;
 }
 
-.content a:hover {
-  background-color: background-color: rgba(234,151,21,.75);
+.content h2 {
+  text-align: center;
+  font-weight: bold;
+  background-color: rgba(132,109,97,0.5);
+  padding: 5px;
+  color: white;
+}
+
+.lock-1 {
+  width: 300px;
+  height: 225px;
+  background-image: url(../images/lock_1.jpg);
+}
+
+.lock-2 {
+  width: 300px;
+  height: 225px;
+  rgba(234,151,21,1);
+  background-image: url(../images/lock_2.jpg)
+}
+
+.lock-3 {
+  width: 300px;
+  height: 225px;
+  rgba(234,151,21,1);
+  background-image: url(../images/lock_3.jpg)
 }
